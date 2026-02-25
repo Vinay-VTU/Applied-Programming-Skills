@@ -13,4 +13,20 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0977-squares-of-a-sorted-array](https://github.com/Vinay-VTU/Applied-Programming-Skills/tree/master/0977-squares-of-a-sorted-array) |
+## Stack
+|  |
+| ------- |
+| [0901-online-stock-span](https://github.com/Vinay-VTU/Applied-Programming-Skills/tree/master/0901-online-stock-span) |
+## Design
+|  |
+| ------- |
+| [0901-online-stock-span](https://github.com/Vinay-VTU/Applied-Programming-Skills/tree/master/0901-online-stock-span) |
+## Monotonic Stack
+|  |
+| ------- |
+| [0901-online-stock-span](https://github.com/Vinay-VTU/Applied-Programming-Skills/tree/master/0901-online-stock-span) |
+## Data Stream
+|  |
+| ------- |
+| [0901-online-stock-span](https://github.com/Vinay-VTU/Applied-Programming-Skills/tree/master/0901-online-stock-span) |
 <!---LeetCode Topics End-->
