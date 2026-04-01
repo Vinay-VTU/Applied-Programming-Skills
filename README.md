@@ -5,6 +5,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0239-sliding-window-maximum](https://github.com/Vinay-VTU/Applied-Programming-Skills/tree/master/0239-sliding-window-maximum) |
+| [0622-design-circular-queue](https://github.com/Vinay-VTU/Applied-Programming-Skills/tree/master/0622-design-circular-queue) |
 | [0735-asteroid-collision](https://github.com/Vinay-VTU/Applied-Programming-Skills/tree/master/0735-asteroid-collision) |
 | [0946-validate-stack-sequences](https://github.com/Vinay-VTU/Applied-Programming-Skills/tree/master/0946-validate-stack-sequences) |
 | [0977-squares-of-a-sorted-array](https://github.com/Vinay-VTU/Applied-Programming-Skills/tree/master/0977-squares-of-a-sorted-array) |
@@ -36,6 +37,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0155-min-stack](https://github.com/Vinay-VTU/Applied-Programming-Skills/tree/master/0155-min-stack) |
 | [0232-implement-queue-using-stacks](https://github.com/Vinay-VTU/Applied-Programming-Skills/tree/master/0232-implement-queue-using-stacks) |
+| [0622-design-circular-queue](https://github.com/Vinay-VTU/Applied-Programming-Skills/tree/master/0622-design-circular-queue) |
 | [0901-online-stock-span](https://github.com/Vinay-VTU/Applied-Programming-Skills/tree/master/0901-online-stock-span) |
 ## Monotonic Stack
 |  |
@@ -66,6 +68,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0232-implement-queue-using-stacks](https://github.com/Vinay-VTU/Applied-Programming-Skills/tree/master/0232-implement-queue-using-stacks) |
 | [0239-sliding-window-maximum](https://github.com/Vinay-VTU/Applied-Programming-Skills/tree/master/0239-sliding-window-maximum) |
+| [0622-design-circular-queue](https://github.com/Vinay-VTU/Applied-Programming-Skills/tree/master/0622-design-circular-queue) |
 | [1438-longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit](https://github.com/Vinay-VTU/Applied-Programming-Skills/tree/master/1438-longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit) |
 ## Sliding Window
 |  |
@@ -105,4 +108,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0199-binary-tree-right-side-view](https://github.com/Vinay-VTU/Applied-Programming-Skills/tree/master/0199-binary-tree-right-side-view) |
+## Linked List
+|  |
+| ------- |
+| [0622-design-circular-queue](https://github.com/Vinay-VTU/Applied-Programming-Skills/tree/master/0622-design-circular-queue) |
 <!---LeetCode Topics End-->
