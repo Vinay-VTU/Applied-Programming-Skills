@@ -5,6 +5,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0735-asteroid-collision](https://github.com/Vinay-VTU/Applied-Programming-Skills/tree/master/0735-asteroid-collision) |
+| [0946-validate-stack-sequences](https://github.com/Vinay-VTU/Applied-Programming-Skills/tree/master/0946-validate-stack-sequences) |
 | [0977-squares-of-a-sorted-array](https://github.com/Vinay-VTU/Applied-Programming-Skills/tree/master/0977-squares-of-a-sorted-array) |
 | [1475-final-prices-with-a-special-discount-in-a-shop](https://github.com/Vinay-VTU/Applied-Programming-Skills/tree/master/1475-final-prices-with-a-special-discount-in-a-shop) |
 | [2418-sort-the-people](https://github.com/Vinay-VTU/Applied-Programming-Skills/tree/master/2418-sort-the-people) |
@@ -24,6 +25,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0155-min-stack](https://github.com/Vinay-VTU/Applied-Programming-Skills/tree/master/0155-min-stack) |
 | [0735-asteroid-collision](https://github.com/Vinay-VTU/Applied-Programming-Skills/tree/master/0735-asteroid-collision) |
 | [0901-online-stock-span](https://github.com/Vinay-VTU/Applied-Programming-Skills/tree/master/0901-online-stock-span) |
+| [0946-validate-stack-sequences](https://github.com/Vinay-VTU/Applied-Programming-Skills/tree/master/0946-validate-stack-sequences) |
 | [1249-minimum-remove-to-make-valid-parentheses](https://github.com/Vinay-VTU/Applied-Programming-Skills/tree/master/1249-minimum-remove-to-make-valid-parentheses) |
 | [1475-final-prices-with-a-special-discount-in-a-shop](https://github.com/Vinay-VTU/Applied-Programming-Skills/tree/master/1475-final-prices-with-a-special-discount-in-a-shop) |
 ## Design
@@ -54,4 +56,5 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0735-asteroid-collision](https://github.com/Vinay-VTU/Applied-Programming-Skills/tree/master/0735-asteroid-collision) |
+| [0946-validate-stack-sequences](https://github.com/Vinay-VTU/Applied-Programming-Skills/tree/master/0946-validate-stack-sequences) |
 <!---LeetCode Topics End-->
