@@ -5,6 +5,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0239-sliding-window-maximum](https://github.com/Vinay-VTU/Applied-Programming-Skills/tree/master/0239-sliding-window-maximum) |
+| [0621-task-scheduler](https://github.com/Vinay-VTU/Applied-Programming-Skills/tree/master/0621-task-scheduler) |
 | [0622-design-circular-queue](https://github.com/Vinay-VTU/Applied-Programming-Skills/tree/master/0622-design-circular-queue) |
 | [0641-design-circular-deque](https://github.com/Vinay-VTU/Applied-Programming-Skills/tree/master/0641-design-circular-deque) |
 | [0735-asteroid-collision](https://github.com/Vinay-VTU/Applied-Programming-Skills/tree/master/0735-asteroid-collision) |
@@ -20,6 +21,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Sorting
 |  |
 | ------- |
+| [0621-task-scheduler](https://github.com/Vinay-VTU/Applied-Programming-Skills/tree/master/0621-task-scheduler) |
 | [0977-squares-of-a-sorted-array](https://github.com/Vinay-VTU/Applied-Programming-Skills/tree/master/0977-squares-of-a-sorted-array) |
 | [2418-sort-the-people](https://github.com/Vinay-VTU/Applied-Programming-Skills/tree/master/2418-sort-the-people) |
 ## Stack
@@ -59,6 +61,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Hash Table
 |  |
 | ------- |
+| [0621-task-scheduler](https://github.com/Vinay-VTU/Applied-Programming-Skills/tree/master/0621-task-scheduler) |
 | [2418-sort-the-people](https://github.com/Vinay-VTU/Applied-Programming-Skills/tree/master/2418-sort-the-people) |
 ## Simulation
 |  |
@@ -82,6 +85,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0239-sliding-window-maximum](https://github.com/Vinay-VTU/Applied-Programming-Skills/tree/master/0239-sliding-window-maximum) |
+| [0621-task-scheduler](https://github.com/Vinay-VTU/Applied-Programming-Skills/tree/master/0621-task-scheduler) |
 | [1438-longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit](https://github.com/Vinay-VTU/Applied-Programming-Skills/tree/master/1438-longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit) |
 ## Monotonic Queue
 |  |
@@ -116,4 +120,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0622-design-circular-queue](https://github.com/Vinay-VTU/Applied-Programming-Skills/tree/master/0622-design-circular-queue) |
 | [0641-design-circular-deque](https://github.com/Vinay-VTU/Applied-Programming-Skills/tree/master/0641-design-circular-deque) |
+## Greedy
+|  |
+| ------- |
+| [0621-task-scheduler](https://github.com/Vinay-VTU/Applied-Programming-Skills/tree/master/0621-task-scheduler) |
+## Counting
+|  |
+| ------- |
+| [0621-task-scheduler](https://github.com/Vinay-VTU/Applied-Programming-Skills/tree/master/0621-task-scheduler) |
 <!---LeetCode Topics End-->
