@@ -20,12 +20,14 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0020-valid-parentheses](https://github.com/Vinay-VTU/Applied-Programming-Skills/tree/master/0020-valid-parentheses) |
+| [0155-min-stack](https://github.com/Vinay-VTU/Applied-Programming-Skills/tree/master/0155-min-stack) |
 | [0901-online-stock-span](https://github.com/Vinay-VTU/Applied-Programming-Skills/tree/master/0901-online-stock-span) |
 | [1249-minimum-remove-to-make-valid-parentheses](https://github.com/Vinay-VTU/Applied-Programming-Skills/tree/master/1249-minimum-remove-to-make-valid-parentheses) |
 | [1475-final-prices-with-a-special-discount-in-a-shop](https://github.com/Vinay-VTU/Applied-Programming-Skills/tree/master/1475-final-prices-with-a-special-discount-in-a-shop) |
 ## Design
 |  |
 | ------- |
+| [0155-min-stack](https://github.com/Vinay-VTU/Applied-Programming-Skills/tree/master/0155-min-stack) |
 | [0901-online-stock-span](https://github.com/Vinay-VTU/Applied-Programming-Skills/tree/master/0901-online-stock-span) |
 ## Monotonic Stack
 |  |
