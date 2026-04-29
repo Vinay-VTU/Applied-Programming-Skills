@@ -21,6 +21,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0721-accounts-merge](https://github.com/Vinay-VTU/Applied-Programming-Skills/tree/master/0721-accounts-merge) |
 | [0733-flood-fill](https://github.com/Vinay-VTU/Applied-Programming-Skills/tree/master/0733-flood-fill) |
 | [0735-asteroid-collision](https://github.com/Vinay-VTU/Applied-Programming-Skills/tree/master/0735-asteroid-collision) |
+| [0746-min-cost-climbing-stairs](https://github.com/Vinay-VTU/Applied-Programming-Skills/tree/master/0746-min-cost-climbing-stairs) |
 | [0929-unique-email-addresses](https://github.com/Vinay-VTU/Applied-Programming-Skills/tree/master/0929-unique-email-addresses) |
 | [0946-validate-stack-sequences](https://github.com/Vinay-VTU/Applied-Programming-Skills/tree/master/0946-validate-stack-sequences) |
 | [0973-k-closest-points-to-origin](https://github.com/Vinay-VTU/Applied-Programming-Skills/tree/master/0973-k-closest-points-to-origin) |
@@ -313,6 +314,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0070-climbing-stairs](https://github.com/Vinay-VTU/Applied-Programming-Skills/tree/master/0070-climbing-stairs) |
 | [0198-house-robber](https://github.com/Vinay-VTU/Applied-Programming-Skills/tree/master/0198-house-robber) |
 | [0542-01-matrix](https://github.com/Vinay-VTU/Applied-Programming-Skills/tree/master/0542-01-matrix) |
+| [0746-min-cost-climbing-stairs](https://github.com/Vinay-VTU/Applied-Programming-Skills/tree/master/0746-min-cost-climbing-stairs) |
 ## Math
 |  |
 | ------- |
