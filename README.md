@@ -27,6 +27,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Two Pointers
 |  |
 | ------- |
+| [0202-happy-number](https://github.com/Vinay-VTU/Applied-Programming-Skills/tree/master/0202-happy-number) |
 | [0977-squares-of-a-sorted-array](https://github.com/Vinay-VTU/Applied-Programming-Skills/tree/master/0977-squares-of-a-sorted-array) |
 ## Sorting
 |  |
@@ -82,6 +83,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Hash Table
 |  |
 | ------- |
+| [0202-happy-number](https://github.com/Vinay-VTU/Applied-Programming-Skills/tree/master/0202-happy-number) |
 | [0347-top-k-frequent-elements](https://github.com/Vinay-VTU/Applied-Programming-Skills/tree/master/0347-top-k-frequent-elements) |
 | [0621-task-scheduler](https://github.com/Vinay-VTU/Applied-Programming-Skills/tree/master/0621-task-scheduler) |
 | [0721-accounts-merge](https://github.com/Vinay-VTU/Applied-Programming-Skills/tree/master/0721-accounts-merge) |
@@ -282,4 +284,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0542-01-matrix](https://github.com/Vinay-VTU/Applied-Programming-Skills/tree/master/0542-01-matrix) |
+## Math
+|  |
+| ------- |
+| [0202-happy-number](https://github.com/Vinay-VTU/Applied-Programming-Skills/tree/master/0202-happy-number) |
 <!---LeetCode Topics End-->
