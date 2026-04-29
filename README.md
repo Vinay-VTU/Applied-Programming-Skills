@@ -9,6 +9,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0200-number-of-islands](https://github.com/Vinay-VTU/Applied-Programming-Skills/tree/master/0200-number-of-islands) |
 | [0215-kth-largest-element-in-an-array](https://github.com/Vinay-VTU/Applied-Programming-Skills/tree/master/0215-kth-largest-element-in-an-array) |
 | [0239-sliding-window-maximum](https://github.com/Vinay-VTU/Applied-Programming-Skills/tree/master/0239-sliding-window-maximum) |
+| [0315-count-of-smaller-numbers-after-self](https://github.com/Vinay-VTU/Applied-Programming-Skills/tree/master/0315-count-of-smaller-numbers-after-self) |
 | [0347-top-k-frequent-elements](https://github.com/Vinay-VTU/Applied-Programming-Skills/tree/master/0347-top-k-frequent-elements) |
 | [0373-find-k-pairs-with-smallest-sums](https://github.com/Vinay-VTU/Applied-Programming-Skills/tree/master/0373-find-k-pairs-with-smallest-sums) |
 | [0542-01-matrix](https://github.com/Vinay-VTU/Applied-Programming-Skills/tree/master/0542-01-matrix) |
@@ -139,6 +140,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Ordered Set
 |  |
 | ------- |
+| [0315-count-of-smaller-numbers-after-self](https://github.com/Vinay-VTU/Applied-Programming-Skills/tree/master/0315-count-of-smaller-numbers-after-self) |
 | [1438-longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit](https://github.com/Vinay-VTU/Applied-Programming-Skills/tree/master/1438-longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit) |
 ## Tree
 |  |
@@ -247,12 +249,14 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0230-kth-smallest-element-in-a-bst](https://github.com/Vinay-VTU/Applied-Programming-Skills/tree/master/0230-kth-smallest-element-in-a-bst) |
 | [0235-lowest-common-ancestor-of-a-binary-search-tree](https://github.com/Vinay-VTU/Applied-Programming-Skills/tree/master/0235-lowest-common-ancestor-of-a-binary-search-tree) |
+| [0315-count-of-smaller-numbers-after-self](https://github.com/Vinay-VTU/Applied-Programming-Skills/tree/master/0315-count-of-smaller-numbers-after-self) |
 ## Divide and Conquer
 |  |
 | ------- |
 | [0169-majority-element](https://github.com/Vinay-VTU/Applied-Programming-Skills/tree/master/0169-majority-element) |
 | [0190-reverse-bits](https://github.com/Vinay-VTU/Applied-Programming-Skills/tree/master/0190-reverse-bits) |
 | [0215-kth-largest-element-in-an-array](https://github.com/Vinay-VTU/Applied-Programming-Skills/tree/master/0215-kth-largest-element-in-an-array) |
+| [0315-count-of-smaller-numbers-after-self](https://github.com/Vinay-VTU/Applied-Programming-Skills/tree/master/0315-count-of-smaller-numbers-after-self) |
 | [0347-top-k-frequent-elements](https://github.com/Vinay-VTU/Applied-Programming-Skills/tree/master/0347-top-k-frequent-elements) |
 | [1763-longest-nice-substring](https://github.com/Vinay-VTU/Applied-Programming-Skills/tree/master/1763-longest-nice-substring) |
 ## Quickselect
@@ -310,4 +314,16 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0190-reverse-bits](https://github.com/Vinay-VTU/Applied-Programming-Skills/tree/master/0190-reverse-bits) |
 | [1763-longest-nice-substring](https://github.com/Vinay-VTU/Applied-Programming-Skills/tree/master/1763-longest-nice-substring) |
+## Binary Indexed Tree
+|  |
+| ------- |
+| [0315-count-of-smaller-numbers-after-self](https://github.com/Vinay-VTU/Applied-Programming-Skills/tree/master/0315-count-of-smaller-numbers-after-self) |
+## Segment Tree
+|  |
+| ------- |
+| [0315-count-of-smaller-numbers-after-self](https://github.com/Vinay-VTU/Applied-Programming-Skills/tree/master/0315-count-of-smaller-numbers-after-self) |
+## Merge Sort
+|  |
+| ------- |
+| [0315-count-of-smaller-numbers-after-self](https://github.com/Vinay-VTU/Applied-Programming-Skills/tree/master/0315-count-of-smaller-numbers-after-self) |
 <!---LeetCode Topics End-->
