@@ -4,6 +4,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Array
 |  |
 | ------- |
+| [0049-group-anagrams](https://github.com/Vinay-VTU/Applied-Programming-Skills/tree/master/0049-group-anagrams) |
 | [0200-number-of-islands](https://github.com/Vinay-VTU/Applied-Programming-Skills/tree/master/0200-number-of-islands) |
 | [0215-kth-largest-element-in-an-array](https://github.com/Vinay-VTU/Applied-Programming-Skills/tree/master/0215-kth-largest-element-in-an-array) |
 | [0239-sliding-window-maximum](https://github.com/Vinay-VTU/Applied-Programming-Skills/tree/master/0239-sliding-window-maximum) |
@@ -33,6 +34,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Sorting
 |  |
 | ------- |
+| [0049-group-anagrams](https://github.com/Vinay-VTU/Applied-Programming-Skills/tree/master/0049-group-anagrams) |
 | [0215-kth-largest-element-in-an-array](https://github.com/Vinay-VTU/Applied-Programming-Skills/tree/master/0215-kth-largest-element-in-an-array) |
 | [0347-top-k-frequent-elements](https://github.com/Vinay-VTU/Applied-Programming-Skills/tree/master/0347-top-k-frequent-elements) |
 | [0621-task-scheduler](https://github.com/Vinay-VTU/Applied-Programming-Skills/tree/master/0621-task-scheduler) |
@@ -77,6 +79,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0020-valid-parentheses](https://github.com/Vinay-VTU/Applied-Programming-Skills/tree/master/0020-valid-parentheses) |
+| [0049-group-anagrams](https://github.com/Vinay-VTU/Applied-Programming-Skills/tree/master/0049-group-anagrams) |
 | [0257-binary-tree-paths](https://github.com/Vinay-VTU/Applied-Programming-Skills/tree/master/0257-binary-tree-paths) |
 | [0721-accounts-merge](https://github.com/Vinay-VTU/Applied-Programming-Skills/tree/master/0721-accounts-merge) |
 | [0929-unique-email-addresses](https://github.com/Vinay-VTU/Applied-Programming-Skills/tree/master/0929-unique-email-addresses) |
@@ -85,6 +88,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Hash Table
 |  |
 | ------- |
+| [0049-group-anagrams](https://github.com/Vinay-VTU/Applied-Programming-Skills/tree/master/0049-group-anagrams) |
 | [0202-happy-number](https://github.com/Vinay-VTU/Applied-Programming-Skills/tree/master/0202-happy-number) |
 | [0347-top-k-frequent-elements](https://github.com/Vinay-VTU/Applied-Programming-Skills/tree/master/0347-top-k-frequent-elements) |
 | [0621-task-scheduler](https://github.com/Vinay-VTU/Applied-Programming-Skills/tree/master/0621-task-scheduler) |
