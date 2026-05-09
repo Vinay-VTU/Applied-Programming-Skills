@@ -2,26 +2,32 @@ import java.util.*;
 
 class Solution {
     public int[] topKFrequent(int[] nums, int k) {
-        Map<Integer, Integer> freqMap = new HashMap<>();
-        for (int num : nums) {
-            freqMap.put(num, freqMap.getOrDefault(num, 0) + 1);
-        }
+            HashMap<Integer, Integer> map = new HashMap<>();
 
-        PriorityQueue<Map.Entry<Integer, Integer>> minHeap =
-            new PriorityQueue<>((a, b) -> a.getValue() - b.getValue());
+                    // Count frequency
+                            for (int num : nums) {
+                                        map.put(num, map.getOrDefault(num, 0) + 1);
+                                                }
 
-        for (Map.Entry<Integer, Integer> entry : freqMap.entrySet()) {
-            minHeap.add(entry);
-            if (minHeap.size() > k) {
-                minHeap.poll();
-            }
-        }
+                                                        // Min heap based on frequency
+                                                                PriorityQueue<Integer> pq = new PriorityQueue<>(
+                                                                            (a, b) -> map.get(a) - map.get(b)
+                                                                                    );
 
-        int[] result = new int[k];
-        int i = 0;
-        for (Map.Entry<Integer, Integer> entry : minHeap) {
-            result[i++] = entry.getKey();
-        }
-        return result;
-    }
-}
+                                                                                            for (int num : map.keySet()) {
+                                                                                                        pq.add(num);
+
+                                                                                                                    if (pq.size() > k) {
+                                                                                                                                    pq.poll();
+                                                                                                                                                }
+                                                                                                                                                        }
+
+                                                                                                                                                                int[] ans = new int[k];
+
+                                                                                                                                                                        for (int i = 0; i < k; i++) {
+                                                                                                                                                                                    ans[i] = pq.poll();
+                                                                                                                                                                                            }
+
+                                                                                                                                                                                                    return ans;
+                                                                                                                                                                                                        }
+                                                                                                                                                                                                        }
