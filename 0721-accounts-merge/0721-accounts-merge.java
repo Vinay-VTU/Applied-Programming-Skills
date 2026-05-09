@@ -2,56 +2,77 @@ import java.util.*;
 
 class Solution {
     public List<List<String>> accountsMerge(List<List<String>> accounts) {
-        Map<String, String> parent = new HashMap<>();
-        Map<String, String> emailToName = new HashMap<>();
+            int n = accounts.size();
 
-        // Make parent for every email and union emails in same account
-        for (List<String> account : accounts) {
-            String name = account.get(0);
+                    DSU dsu = new DSU(n);
 
-            for (int i = 1; i < account.size(); i++) {
-                String email = account.get(i);
-                parent.putIfAbsent(email, email);
-                emailToName.put(email, name);
+                            HashMap<String, Integer> emailToIndex = new HashMap<>();
 
-                union(parent, account.get(1), email);
-            }
-        }
+                                    // Union accounts with same email
+                                            for (int i = 0; i < n; i++) {
+                                                        List<String> account = accounts.get(i);
 
-        // Group emails by root parent
-        Map<String, TreeSet<String>> groups = new HashMap<>();
+                                                                    for (int j = 1; j < account.size(); j++) {
+                                                                                    String email = account.get(j);
 
-        for (String email : parent.keySet()) {
-            String root = find(parent, email);
-            groups.putIfAbsent(root, new TreeSet<>());
-            groups.get(root).add(email);
-        }
+                                                                                                    if (!emailToIndex.containsKey(email)) {
+                                                                                                                        emailToIndex.put(email, i);
+                                                                                                                                        } else {
+                                                                                                                                                            dsu.union(i, emailToIndex.get(email));
+                                                                                                                                                                            }
+                                                                                                                                                                                        }
+                                                                                                                                                                                                }
 
-        List<List<String>> result = new ArrayList<>();
+                                                                                                                                                                                                        // Store emails by parent account
+                                                                                                                                                                                                                HashMap<Integer, TreeSet<String>> map = new HashMap<>();
 
-        for (String root : groups.keySet()) {
-            List<String> merged = new ArrayList<>();
-            merged.add(emailToName.get(root));
-            merged.addAll(groups.get(root));
-            result.add(merged);
-        }
+                                                                                                                                                                                                                        for (String email : emailToIndex.keySet()) {
+                                                                                                                                                                                                                                    int parent = dsu.find(emailToIndex.get(email));
 
-        return result;
-    }
+                                                                                                                                                                                                                                                map.putIfAbsent(parent, new TreeSet<>());
+                                                                                                                                                                                                                                                            map.get(parent).add(email);
+                                                                                                                                                                                                                                                                    }
 
-    private String find(Map<String, String> parent, String email) {
-        if (!parent.get(email).equals(email)) {
-            parent.put(email, find(parent, parent.get(email)));
-        }
-        return parent.get(email);
-    }
+                                                                                                                                                                                                                                                                            List<List<String>> result = new ArrayList<>();
 
-    private void union(Map<String, String> parent, String a, String b) {
-        String rootA = find(parent, a);
-        String rootB = find(parent, b);
+                                                                                                                                                                                                                                                                                    for (int parent : map.keySet()) {
+                                                                                                                                                                                                                                                                                                List<String> merged = new ArrayList<>();
 
-        if (!rootA.equals(rootB)) {
-            parent.put(rootB, rootA);
-        }
-    }
-}
+                                                                                                                                                                                                                                                                                                            merged.add(accounts.get(parent).get(0));
+                                                                                                                                                                                                                                                                                                                        merged.addAll(map.get(parent));
+
+                                                                                                                                                                                                                                                                                                                                    result.add(merged);
+                                                                                                                                                                                                                                                                                                                                            }
+
+                                                                                                                                                                                                                                                                                                                                                    return result;
+                                                                                                                                                                                                                                                                                                                                                        }
+                                                                                                                                                                                                                                                                                                                                                        }
+
+                                                                                                                                                                                                                                                                                                                                                        class DSU {
+                                                                                                                                                                                                                                                                                                                                                            int[] parent;
+
+                                                                                                                                                                                                                                                                                                                                                                DSU(int n) {
+                                                                                                                                                                                                                                                                                                                                                                        parent = new int[n];
+
+                                                                                                                                                                                                                                                                                                                                                                                for (int i = 0; i < n; i++) {
+                                                                                                                                                                                                                                                                                                                                                                                            parent[i] = i;
+                                                                                                                                                                                                                                                                                                                                                                                                    }
+                                                                                                                                                                                                                                                                                                                                                                                                        }
+
+                                                                                                                                                                                                                                                                                                                                                                                                            int find(int x) {
+                                                                                                                                                                                                                                                                                                                                                                                                                    if (parent[x] != x) {
+                                                                                                                                                                                                                                                                                                                                                                                                                                parent[x] = find(parent[x]);
+                                                                                                                                                                                                                                                                                                                                                                                                                                        }
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                return parent[x];
+                                                                                                                                                                                                                                                                                                                                                                                                                                                    }
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                        void union(int a, int b) {
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                int parentA = find(a);
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                        int parentB = find(b);
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                if (parentA != parentB) {
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            parent[parentB] = parentA;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    }
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        }
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        }
