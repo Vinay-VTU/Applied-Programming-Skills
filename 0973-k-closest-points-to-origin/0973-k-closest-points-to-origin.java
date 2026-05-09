@@ -2,18 +2,28 @@ import java.util.*;
 
 class Solution {
     public int[][] kClosest(int[][] points, int k) {
-        Arrays.sort(points, (a, b) -> {
-            int distA = a[0] * a[0] + a[1] * a[1];
-            int distB = b[0] * b[0] + b[1] * b[1];
-            return distA - distB;
-        });
+            PriorityQueue<int[]> pq = new PriorityQueue<>(
+                        (a, b) -> distance(b) - distance(a)
+                                );
 
-        int[][] ans = new int[k][2];
+                                        for (int[] point : points) {
+                                                    pq.add(point);
 
-        for (int i = 0; i < k; i++) {
-            ans[i] = points[i];
-        }
+                                                                if (pq.size() > k) {
+                                                                                pq.poll();
+                                                                                            }
+                                                                                                    }
 
-        return ans;
-    }
-}
+                                                                                                            int[][] result = new int[k][2];
+
+                                                                                                                    for (int i = 0; i < k; i++) {
+                                                                                                                                result[i] = pq.poll();
+                                                                                                                                        }
+
+                                                                                                                                                return result;
+                                                                                                                                                    }
+
+                                                                                                                                                        private int distance(int[] point) {
+                                                                                                                                                                return point[0] * point[0] + point[1] * point[1];
+                                                                                                                                                                    }
+                                                                                                                                                                    }
