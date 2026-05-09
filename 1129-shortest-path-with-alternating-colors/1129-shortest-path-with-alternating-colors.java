@@ -2,62 +2,64 @@ import java.util.*;
 
 class Solution {
     public int[] shortestAlternatingPaths(int n, int[][] redEdges, int[][] blueEdges) {
-        ArrayList<Integer>[][] graph = new ArrayList[2][n];
+            ArrayList<ArrayList<Integer>> red = new ArrayList<>();
+                    ArrayList<ArrayList<Integer>> blue = new ArrayList<>();
 
-        for (int color = 0; color < 2; color++) {
-            for (int i = 0; i < n; i++) {
-                graph[color][i] = new ArrayList<>();
-            }
-        }
+                            for (int i = 0; i < n; i++) {
+                                        red.add(new ArrayList<>());
+                                                    blue.add(new ArrayList<>());
+                                                            }
 
-        // 0 = red, 1 = blue
-        for (int[] e : redEdges) {
-            graph[0][e[0]].add(e[1]);
-        }
+                                                                    for (int[] edge : redEdges) {
+                                                                                red.get(edge[0]).add(edge[1]);
+                                                                                        }
 
-        for (int[] e : blueEdges) {
-            graph[1][e[0]].add(e[1]);
-        }
+                                                                                                for (int[] edge : blueEdges) {
+                                                                                                            blue.get(edge[0]).add(edge[1]);
+                                                                                                                    }
 
-        int[] ans = new int[n];
-        Arrays.fill(ans, -1);
+                                                                                                                            int[] answer = new int[n];
+                                                                                                                                    Arrays.fill(answer, -1);
 
-        boolean[][] visited = new boolean[n][2];
-        Queue<int[]> q = new LinkedList<>();
+                                                                                                                                            boolean[][] visited = new boolean[n][2];
 
-        // Start from node 0 with both possible previous colors
-        q.add(new int[]{0, 0});
-        q.add(new int[]{0, 1});
-        visited[0][0] = true;
-        visited[0][1] = true;
+                                                                                                                                                    Queue<int[]> queue = new LinkedList<>();
 
-        int steps = 0;
+                                                                                                                                                            // color 0 = red, color 1 = blue
+                                                                                                                                                                    queue.add(new int[]{0, 0, 0});
+                                                                                                                                                                            queue.add(new int[]{0, 1, 0});
 
-        while (!q.isEmpty()) {
-            int size = q.size();
+                                                                                                                                                                                    visited[0][0] = true;
+                                                                                                                                                                                            visited[0][1] = true;
 
-            for (int i = 0; i < size; i++) {
-                int[] curr = q.poll();
-                int node = curr[0];
-                int prevColor = curr[1];
+                                                                                                                                                                                                    while (!queue.isEmpty()) {
+                                                                                                                                                                                                                int[] current = queue.poll();
 
-                if (ans[node] == -1) {
-                    ans[node] = steps;
-                }
+                                                                                                                                                                                                                            int node = current[0];
+                                                                                                                                                                                                                                        int color = current[1];
+                                                                                                                                                                                                                                                    int distance = current[2];
 
-                int nextColor = 1 - prevColor;
+                                                                                                                                                                                                                                                                if (answer[node] == -1) {
+                                                                                                                                                                                                                                                                                answer[node] = distance;
+                                                                                                                                                                                                                                                                                            }
 
-                for (int next : graph[nextColor][node]) {
-                    if (!visited[next][nextColor]) {
-                        visited[next][nextColor] = true;
-                        q.add(new int[]{next, nextColor});
-                    }
-                }
-            }
+                                                                                                                                                                                                                                                                                                        if (color == 0) {
+                                                                                                                                                                                                                                                                                                                        for (int next : blue.get(node)) {
+                                                                                                                                                                                                                                                                                                                                            if (!visited[next][1]) {
+                                                                                                                                                                                                                                                                                                                                                                    visited[next][1] = true;
+                                                                                                                                                                                                                                                                                                                                                                                            queue.add(new int[]{next, 1, distance + 1});
+                                                                                                                                                                                                                                                                                                                                                                                                                }
+                                                                                                                                                                                                                                                                                                                                                                                                                                }
+                                                                                                                                                                                                                                                                                                                                                                                                                                            } else {
+                                                                                                                                                                                                                                                                                                                                                                                                                                                            for (int next : red.get(node)) {
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                if (!visited[next][0]) {
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        visited[next][0] = true;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                queue.add(new int[]{next, 0, distance + 1});
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    }
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    }
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                }
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        }
 
-            steps++;
-        }
-
-        return ans;
-    }
-}
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                return answer;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    }
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    }
