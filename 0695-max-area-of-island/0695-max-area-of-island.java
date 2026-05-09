@@ -1,34 +1,38 @@
 class Solution {
-    public int maxAreaOfIsland(int[][] grid) {
-        int m = grid.length;
-        int n = grid[0].length;
-        int maxArea = 0;
+        public int maxAreaOfIsland(int[][] grid) {
+                int m = grid.length;
+                        int n = grid[0].length;
+                                int maxArea = 0;
 
-        for (int i = 0; i < m; i++) {
-            for (int j = 0; j < n; j++) {
-                if (grid[i][j] == 1) {
-                    int area = dfs(grid, i, j);
-                    maxArea = Math.max(maxArea, area);
-                }
-            }
-        }
+                                        for (int i = 0; i < m; i++) {
+                                                    for (int j = 0; j < n; j++) {
+                                                                    if (grid[i][j] == 1) {
+                                                                                        int area = dfs(grid, i, j);
+                                                                                                            maxArea = Math.max(maxArea, area);
+                                                                                                                            }
+                                                                                                                                        }
+                                                                                                                                                }
 
-        return maxArea;
-    }
+                                                                                                                                                        return maxArea;
+                                                                                                                                                            }
 
-    private int dfs(int[][] grid, int i, int j) {
-        if (i < 0 || i >= grid.length || j < 0 || j >= grid[0].length || grid[i][j] == 0) {
-            return 0;
-        }
+                                                                                                                                                                private int dfs(int[][] grid, int row, int col) {
+                                                                                                                                                                        int m = grid.length;
+                                                                                                                                                                                int n = grid[0].length;
 
-        grid[i][j] = 0; // mark visited
+                                                                                                                                                                                        if (row < 0 || row >= m || col < 0 || col >= n || grid[row][col] == 0) {
+                                                                                                                                                                                                    return 0;
+                                                                                                                                                                                                            }
 
-        int area = 1;
-        area += dfs(grid, i + 1, j);
-        area += dfs(grid, i - 1, j);
-        area += dfs(grid, i, j + 1);
-        area += dfs(grid, i, j - 1);
+                                                                                                                                                                                                                    grid[row][col] = 0; // mark visited
 
-        return area;
-    }
-}
+                                                                                                                                                                                                                            int area = 1;
+
+                                                                                                                                                                                                                                    area += dfs(grid, row + 1, col);
+                                                                                                                                                                                                                                            area += dfs(grid, row - 1, col);
+                                                                                                                                                                                                                                                    area += dfs(grid, row, col + 1);
+                                                                                                                                                                                                                                                            area += dfs(grid, row, col - 1);
+
+                                                                                                                                                                                                                                                                    return area;
+                                                                                                                                                                                                                                                                        }
+                                                                                                                                           }
