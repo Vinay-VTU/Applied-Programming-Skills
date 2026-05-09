@@ -336,12 +336,14 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0062-unique-paths](https://github.com/Vinay-VTU/Applied-Programming-Skills/tree/master/0062-unique-paths) |
 | [0070-climbing-stairs](https://github.com/Vinay-VTU/Applied-Programming-Skills/tree/master/0070-climbing-stairs) |
 | [0202-happy-number](https://github.com/Vinay-VTU/Applied-Programming-Skills/tree/master/0202-happy-number) |
+| [0231-power-of-two](https://github.com/Vinay-VTU/Applied-Programming-Skills/tree/master/0231-power-of-two) |
 | [0973-k-closest-points-to-origin](https://github.com/Vinay-VTU/Applied-Programming-Skills/tree/master/0973-k-closest-points-to-origin) |
 ## Bit Manipulation
 |  |
 | ------- |
 | [0078-subsets](https://github.com/Vinay-VTU/Applied-Programming-Skills/tree/master/0078-subsets) |
 | [0190-reverse-bits](https://github.com/Vinay-VTU/Applied-Programming-Skills/tree/master/0190-reverse-bits) |
+| [0231-power-of-two](https://github.com/Vinay-VTU/Applied-Programming-Skills/tree/master/0231-power-of-two) |
 | [1763-longest-nice-substring](https://github.com/Vinay-VTU/Applied-Programming-Skills/tree/master/1763-longest-nice-substring) |
 ## Binary Indexed Tree
 |  |
@@ -367,4 +369,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0062-unique-paths](https://github.com/Vinay-VTU/Applied-Programming-Skills/tree/master/0062-unique-paths) |
+## Recursion
+|  |
+| ------- |
+| [0231-power-of-two](https://github.com/Vinay-VTU/Applied-Programming-Skills/tree/master/0231-power-of-two) |
 <!---LeetCode Topics End-->
