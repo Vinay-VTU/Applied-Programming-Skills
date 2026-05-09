@@ -1,38 +1,53 @@
 import java.util.*;
 
 class Solution {
-    int[] tree;
-    int offset = 10001;
-
     public List<Integer> countSmaller(int[] nums) {
-        tree = new int[20005];
-        Integer[] ans = new Integer[nums.length];
+            int n = nums.length;
+                    Integer[] ans = new Integer[n];
 
-        for (int i = nums.length - 1; i >= 0; i--) {
-            int index = nums[i] + offset;
+                            int offset = 10001;
+                                    int size = 20002;
 
-            ans[i] = query(index - 1); // count numbers smaller than nums[i]
-            update(index);
-        }
+                                            FenwickTree tree = new FenwickTree(size);
 
-        return Arrays.asList(ans);
-    }
+                                                    for (int i = n - 1; i >= 0; i--) {
+                                                                int index = nums[i] + offset;
 
-    private void update(int index) {
-        while (index < tree.length) {
-            tree[index]++;
-            index += index & -index;
-        }
-    }
+                                                                            ans[i] = tree.query(index - 1);
 
-    private int query(int index) {
-        int sum = 0;
+                                                                                        tree.update(index, 1);
+                                                                                                }
 
-        while (index > 0) {
-            sum += tree[index];
-            index -= index & -index;
-        }
+                                                                                                        return Arrays.asList(ans);
+                                                                                                            }
+                                                                                                            }
 
-        return sum;
-    }
-}
+                                                                                                            class FenwickTree {
+                                                                                                                int[] tree;
+
+                                                                                                                    FenwickTree(int size) {
+                                                                                                                            tree = new int[size + 1];
+                                                                                                                                }
+
+                                                                                                                                    void update(int index, int value) {
+                                                                                                                                            index++;
+
+                                                                                                                                                    while (index < tree.length) {
+                                                                                                                                                                tree[index] += value;
+                                                                                                                                                                            index += index & -index;
+                                                                                                                                                                                    }
+                                                                                                                                                                                        }
+
+                                                                                                                                                                                            int query(int index) {
+                                                                                                                                                                                                    index++;
+
+                                                                                                                                                                                                            int sum = 0;
+
+                                                                                                                                                                                                                    while (index > 0) {
+                                                                                                                                                                                                                                sum += tree[index];
+                                                                                                                                                                                                                                            index -= index & -index;
+                                                                                                                                                                                                                                                    }
+
+                                                                                                                                                                                                                                                            return sum;
+                                                                                                                                                                                                                                                                }
+                                                                                                                                                                                                                                                                }
